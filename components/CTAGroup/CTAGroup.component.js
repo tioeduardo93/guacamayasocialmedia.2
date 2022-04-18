@@ -1,6 +1,6 @@
 import { Button, Flex } from "@chakra-ui/react";
 
-export const CTAGroup = ({ }) => {
+export const CTAGroup = () => {
   return (
     <Flex flexDir={{
       base: 'column',

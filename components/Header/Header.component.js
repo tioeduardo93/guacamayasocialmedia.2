@@ -12,7 +12,7 @@ export const Header = () => {
     <chakra.div bg="primary" px={8}>
       <chakra.header justifyContent={'space-between'} display={'flex'} bg="primary" py={2} maxW="1280px" mx="auto">
         <div>
-          <chakra.img height={'50px'} src="https://via.placeholder.com/170x50" alt="" />
+          <chakra.img height={'50px'} src="/logo.png" alt="" />
         </div>
         {
           width > 1024 ? (

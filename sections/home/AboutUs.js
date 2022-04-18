@@ -16,12 +16,14 @@ const TeamItem = ({
 };
 
 const OurTeamComponent = () => {
-
-      <Grid
+      return <Grid
+        maxW={'1280px'}
+        mx="auto"
         templateColumns={{
           base: '1fr',
           xl: '1fr 1fr'
         }}
+        pb={8}
         gap={4}
       >
         <Grid
@@ -55,18 +57,15 @@ const OurTeamComponent = () => {
             name="Elizabeth Pinto"
             position="Marketing Planner"
           />
-
           <TeamItem
             src="/equipo/leo.jpg"
             name="Loactivao"
             position="Content Manager / Filmmaker"
           />
-
         </Grid>
         <Center>
-          <img src="https://via.placeholder.com/800x800" alt="" />
+          <img src="/team.jpg" alt="" />
         </Center>
-
       </Grid>
 }
 
