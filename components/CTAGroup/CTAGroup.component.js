@@ -2,16 +2,42 @@ import { Button, Flex } from "@chakra-ui/react";
 
 export const CTAGroup = () => {
   return (
-    <Flex flexDir={{
-      base: 'column',
-      md: 'row',
-    }}
+    <Flex
+      flexDir={{
+        base: "column",
+        md: "row",
+      }}
     >
-      <Button mb={4} mr={{
-        base: 0,
-        md: 4,
-      }} display={'block'} w="100%" colorScheme={'brand'}>call to action</Button>
-      <Button mb={4} display={'block'} w="100%" colorScheme={'brand'} variant="outline">call to action 2</Button>
+      <Button
+        w={{
+          base: "100%",
+          md: "200px",
+        }}
+        rounded="full"
+        mb={4}
+        mr={{
+          base: 0,
+          md: 4,
+        }}
+        display={"block"}
+        colorScheme={"brand"}
+      >
+        Chat With Us
+      </Button>
+      <Button
+        rounded="full"
+        bg="white"
+        w={{
+          base: "100%",
+          md: "200px",
+        }}
+        mb={4}
+        display={"block"}
+        colorScheme={"brand"}
+        variant="outline"
+      >
+        Book Now
+      </Button>
     </Flex>
   );
 };

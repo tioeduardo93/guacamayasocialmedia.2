@@ -1,5 +1,6 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import '../styles/globals.css'
+import "@fontsource/roboto";
 
 const theme = extendTheme({
   colors: {
@@ -12,6 +13,11 @@ const theme = extendTheme({
       900: '#7F0A1F',
     },
     primary: "#EB3663",
+  },
+  global: {
+    body: {
+      fontFamily: 'font-family: "Roboto", sans-serif;',
+    }
   }
 })
 
@@ -21,7 +27,6 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </ChakraProvider>
   )
-
 }
 
 export default MyApp

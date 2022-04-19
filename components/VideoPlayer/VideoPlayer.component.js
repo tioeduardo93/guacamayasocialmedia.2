@@ -28,8 +28,16 @@ export const VideoPlayer = () => {
     <>
       <Circle
         position={"absolute"}
-        top="50%"
-        transform={"translateY(-50%)"}
+        zIndex={4}
+        top={{
+          base: '0',
+          lg: "50%"
+        }}
+        left={{
+          base: "50%",
+          lg: "auto",
+        }}
+        transform={"translate(-50%)"}
         bg="primary"
         color="white"
         size="20"
@@ -38,7 +46,7 @@ export const VideoPlayer = () => {
         cursor={"pointer"}
         onClick={handleOpen}
         _hover={{
-          transform: "scale(1.1) translateY(-45%)",
+          transform: "scale(1.1) translate(-45%)",
         }}
       >
         <BiPlay />
@@ -47,7 +55,7 @@ export const VideoPlayer = () => {
             display={isOpen ? 'flex' : 'none'}
           id="video-shadow"
           position={"fixed"}
-          zIndex="3"
+          zIndex="12"
           height={"100vh"}
           width="100%"
           top="0"

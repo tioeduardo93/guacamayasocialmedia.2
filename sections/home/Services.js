@@ -38,9 +38,6 @@ export const Services = () => {
           }}
           gap={4}
         >
-          <ServicesLink href="/services/design"
-            src="/diseno/servicios/upscale/xdesign.png" alt="" />
-
           <ServicesLink href="/services/influencer"
             src="/diseno/servicios/upscale/xinfluencer.png" alt="" />
 
@@ -50,8 +47,8 @@ export const Services = () => {
           <ServicesLink href="/services/management"
             src="/diseno/servicios/upscale/xmanagement.png" alt="" />
 
-          <ServicesLink href="/services/photo"
-            src="/diseno/servicios/upscale/xphoto.png" alt="" />
+          {/* <ServicesLink href="/services/photo"
+            src="/diseno/servicios/upscale/xphoto.png" alt="" /> */}
 
           <ServicesLink href="/services/video"
             src="/diseno/servicios/upscale/xvideo.png" alt="" />
@@ -73,9 +70,9 @@ export const Services = () => {
             <Title textAlign="start" as="h3" fontSize="5xl">
               Our Services
             </Title>
-            <Text mb={4}>
+            {/* <Text mb={4}>
               lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            </Text>
+            </Text> */}
             <CTAGroup />
           </chakra.div>
         </Flex>

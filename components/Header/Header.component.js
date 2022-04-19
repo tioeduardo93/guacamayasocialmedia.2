@@ -1,6 +1,6 @@
 import { useWindowsSize } from '@/hooks/useWindowSize';
 import { links } from '@/lib/constants';
-import { Button, chakra, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, HStack, Square, useDisclosure } from '@chakra-ui/react';
+import { chakra, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, HStack, Square, useDisclosure } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useRef } from 'react';
 import { BiMenu } from 'react-icons/bi';
@@ -9,11 +9,12 @@ export const Header = () => {
   const { width } = useWindowsSize();
 
   return (
+    <>
     <chakra.div bg="primary" px={8}>
       <chakra.header justifyContent={'space-between'} display={'flex'} bg="primary" py={2} maxW="1280px" mx="auto">
-        <div>
-          <chakra.img height={'50px'} src="/logo.png" alt="" />
-        </div>
+        <Link href={'/'} passHref>
+          <chakra.img cursor={'pointer'} height={'50px'} src="/logo.png" alt="" />
+        </Link>
         {
           width > 1024 ? (
         <HStack spacing={4}>
@@ -46,6 +47,7 @@ export const Header = () => {
         }
       </chakra.header>
     </chakra.div>
+    </>
   );
 };
 

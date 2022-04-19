@@ -1,3 +1,4 @@
+import { Carousel } from '@/components/Carousel/Carousel.component';
 import { CTAGroup } from '@/components/CTAGroup/CTAGroup.component';
 import { Title } from '@/components/Title/Title.component';
 import { VideoPlayer } from '@/components/VideoPlayer/VideoPlayer.component';
@@ -13,17 +14,21 @@ export const Hero = () => {
             justifyItems="center"
             alignItems={'center'}
             minH="500px"
+            className='bg-cool'
         >
-            <div>
-                <Title mb={4} textAlign="start" fontSize="42px">
+            <chakra.div>
+                <Title maxW="500px" mb={4} textTransform="uppercase" textAlign="start" fontSize={{
+                    base: '2rem',
+                    lg: '4rem'
+                }}>
                     Videos, management <br />
                     Ads & Design
                 </Title>
                 <CTAGroup />
-            </div>
+            </chakra.div>
             <chakra.div p={12} position="relative">
                 <VideoPlayer />
-                <chakra.img src="/home/influencers.png" alt="" />
+                <Carousel />
             </chakra.div>
         </Grid>
     );

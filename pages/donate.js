@@ -1,6 +1,6 @@
 import { Title } from "@/components/Title/Title.component";
 import { MainLayout } from "@/layouts/MainLayout";
-import { Button, Container, Text, chakra, Center } from "@chakra-ui/react";
+import { Button, Container, Text, chakra, Center, Grid } from "@chakra-ui/react";
 
 export default function Donate() {
   return (
@@ -16,6 +16,19 @@ export default function Donate() {
         <Text textAlign={'center'} mb={2}>
           Help us give them a better education, enter the link and donate what God puts in your heart, they will thank you.
         </Text>
+
+        <Grid
+          gap={4}
+          templateColumns={{
+            base: '1fr 1fr',
+            lg: '1fr 1fr 1fr 1fr',
+          }}
+        >
+          <img src="/donate/1.jpg" alt="" />
+          <img src="/donate/2.jpg" alt="" />
+          <img src="/donate/3.jpg" alt="" />
+          <img src="/donate/4.jpg" alt="" />
+        </Grid>
 
           <Center mt={8}>
 
