@@ -36,6 +36,13 @@ process.env.NODE_ENV === 'production' && (
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
+          `
+        }}
+      />
+)
+      }
+      </Head>
+      <div dangerouslySetInnerHTML={{__html: `
         <div class="fb-customerchat"
             attribution=setup_tool
             page_id="426177901494317"
@@ -43,12 +50,7 @@ process.env.NODE_ENV === 'production' && (
             logged_in_greeting="Hola! podemos ayudarte en algo?"
             logged_out_greeting="Hola! podemos ayudarte en algo?">
         </div>
-          `
-        }}
-      />
-)
-      }
-      </Head>
+      `}} />
       <Header />
       <Box
         minH="100vh"
