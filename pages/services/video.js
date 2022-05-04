@@ -188,7 +188,7 @@ const Page = () => {
           </Heading>
         </Box>
         <Stack direction={{ base: 'column', sm: 'row' }} spacing={{ base: '2', sm: '4' }}>
-            <CTAGroup />
+            <CTAGroup reference="desde la pagina de servicios de video" />
         </Stack>
       </Stack>
     </Box>

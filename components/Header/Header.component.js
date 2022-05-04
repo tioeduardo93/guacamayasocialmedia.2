@@ -1,9 +1,11 @@
 import { useWindowsSize } from '@/hooks/useWindowSize';
 import { links } from '@/lib/constants';
-import { chakra, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, HStack, Square, useDisclosure } from '@chakra-ui/react';
+import { Box, chakra, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, HStack, Square, useDisclosure } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useRef } from 'react';
 import { BiMenu } from 'react-icons/bi';
+import { CTAGroup } from '../CTAGroup/CTAGroup.component';
+
 
 export const Header = () => {
   const { width } = useWindowsSize();
@@ -40,6 +42,16 @@ export const Header = () => {
               </Link>
             ))
           }
+          <Box
+            css={`
+              button {
+                margin-top: .5rem !important;
+                margin-bottom: .5rem !important;
+              }
+            `}
+          >
+            <CTAGroup reference="Desde la cabecera de la web" />
+          </Box>
         </HStack>
           ) : (
             <MobileMenu />

@@ -5,8 +5,38 @@ import { useState } from 'react'
 export const CTA = () => {
   const [value, setValue]  = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    const htmlBody = `
+      ref: desde la pagina de inicio de la web
+      <h4>Esta persona desea recibir promos de guacamaya</h4>
+      <p>email: ${value}</p>
+    `;
+
+    try {
+      await fetch('/api/gtm', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: formData.email,
+          message: htmlBody,
+        }),
+      })
+    } catch (error) {
+      console.log(error);
+    } finally {
+      toast({
+        title: "thanks!",
+        description: "We'll be in touch soon!",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+        position: 'top'
+      })
+      setShowModal(false);
+    }
   }
 
   return (

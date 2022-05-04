@@ -45,7 +45,7 @@ const Services = () => {
 
         </Grid>
         <Center>
-          <CTAGroup />
+          <CTAGroup reference={"Desde la pagina de servicios"} />
         </Center>
 
     </chakra.section>
