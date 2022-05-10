@@ -248,9 +248,12 @@ export const CTAGroup = ({ reference }) => {
               md: "200px",
             }}
             mb={4}
-            display={"block"}
+            display={"flex"}
             colorScheme={"brand"}
             variant="outline"
+            alignItems="center"
+            justifyContent="center"
+            textAlign="center"
           >
             Book Now
           </Button>
