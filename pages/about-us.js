@@ -89,7 +89,7 @@ export default function AboutUsPage() {
         <Card
           image="/equipo/leo.jpg"
           charge={'Content Manager / Filmmaker'}
-          title="Loactivao"
+          title="Leonardo Angulo"
           description={"Gamer, marvelita (Marvel super heroes fan) and young father which make him to connect with the new generation of buyers more easily, he is addicted to marketing, business and sales subjects, he studied higher education in Venezuela, more than 10 years in radio as a producer, announcer and broadcaster, agency marketing master, and early morning skater."}
         />
       </Grid>
