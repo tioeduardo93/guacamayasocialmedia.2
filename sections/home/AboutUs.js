@@ -9,7 +9,7 @@ const TeamItem = ({
   return (
     <Center flexDir="column">
       <img style={{borderRadius: '999px', height: "149px", width: '149px'}} src={src} alt="" />
-      <Text mt={2} textAlign={'center'} fontSize={'md'} fontWeight='bold'>{name}</Text>
+      <Text textTransform="capitalize" mt={2} textAlign={'center'} fontSize={'md'} fontWeight='bold'>{name}</Text>
       <Text opacity={.8} mt={1} textAlign={'center'} fontSize={'sm'}>{position}</Text>
     </Center>
  );
@@ -59,7 +59,7 @@ const OurTeamComponent = () => {
           />
           <TeamItem
             src="/equipo/leo.jpg"
-            name="Loactivao"
+            name="Leonardo Angulo"
             position="Content Manager / Filmmaker"
           />
         </Grid>
