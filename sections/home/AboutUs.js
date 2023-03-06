@@ -45,13 +45,6 @@ const OurTeamComponent = () => {
             name="Dani Colina"
             position="Designer / Video Editor"
           />
-
-          <TeamItem
-            src="/equipo/daniel.jpg"
-            name="Daniel Gomez"
-            position="Software Developer"
-          />
-
           <TeamItem
             src="/equipo/eli.jpg"
             name="Elizabeth Pinto"

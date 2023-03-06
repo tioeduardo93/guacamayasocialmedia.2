@@ -71,21 +71,12 @@ export default function AboutUsPage() {
           title="Dani Colina"
           description={'Daniela is a designer and editor hungry for success, every day she is thinking about how to do her job better, she has experience as a producer in traditional media and is happily in love with her girlfriend.'}
         />
-
-        <Card
-          image="/equipo/daniel.jpg"
-          charge={'Software Developer'}
-          title="Daniel Gomez"
-          description={"He spends the whole day at the pc, if he's not developing your website probably he is playing minecraft, he is GUACAMAYA tech guy because he is always thinking in codes."}
-        />
-
         <Card
           image="/equipo/eli.jpg"
           charge={'Marketing Planner'}
           title="Elizabeth Pinto"
           description={"She rocks even when she is working, football soccer lover, sasy and our great planner, she is going to be in touch with you to answer all your questions and cover your business  marketing necessities."}
         />
-
         <Card
           image="/equipo/leo.jpg"
           charge={'Content Manager / Filmmaker'}
@@ -93,7 +84,6 @@ export default function AboutUsPage() {
           description={"Gamer, marvelita (Marvel super heroes fan) and young father which make him to connect with the new generation of buyers more easily, he is addicted to marketing, business and sales subjects, he studied higher education in Venezuela, more than 10 years in radio as a producer, announcer and broadcaster, agency marketing master, and early morning skater."}
         />
       </Grid>
-
       </Container>
     </MainLayout>
   );
