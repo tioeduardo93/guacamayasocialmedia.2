@@ -69,9 +69,18 @@ const Page = () => {
         <Grid
           maxW="7xl"
           overflow="auto"
-          templateColumns={{ base: "1fr", lg: "1fr 1fr 1fr" }}
-          gap={3}
+          templateColumns={{ base: "1fr", lg: "1fr 1fr 1fr 1fr" }}
+          gap={1}
         >
+          <iframe
+            width="300"
+            height="480"
+            src="https://www.youtube.com/embed/rwXcbgA4emA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
           <iframe
             width="300"
             height="480"
