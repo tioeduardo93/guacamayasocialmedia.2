@@ -77,7 +77,7 @@ const Page = () => {
             height="480"
             src="https://www.youtube.com/embed/rwXcbgA4emA"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
@@ -86,7 +86,7 @@ const Page = () => {
             height="480"
             src="https://www.youtube.com/embed/fnEguNA8gaw"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
@@ -95,7 +95,7 @@ const Page = () => {
             height="480"
             src="https://www.youtube.com/embed/ejYl1km1O4U"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
@@ -104,7 +104,7 @@ const Page = () => {
             height="480"
             src="https://www.youtube.com/embed/D_RvhePfAAE"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
