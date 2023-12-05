@@ -78,7 +78,7 @@ const Page = () => {
             the key for you to lead the digital market in your line of business.
             <br />
             <br />
-            Offer a free consultation and let's see what type of video will be
+            Offer a free consultation and lets see what type of video will be
             best for your business.
           </Text>
 
