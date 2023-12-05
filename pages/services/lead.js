@@ -7,6 +7,7 @@ import {
   Heading,
   Text,
   useColorModeValue,
+  Grid,
 } from "@chakra-ui/react";
 
 const Page = () => {
@@ -62,7 +63,44 @@ const Page = () => {
           <br />
           <br /> - Get a consultation today and let's close sales now!
         </Text>
-        <Text textAlign="center" fontSize="2xl">
+        <Text textAlign="center" fontSize="2xl" marginBottom={10}>
+          Here are somo of our leads:
+        </Text>
+        <Grid
+          maxW="7xl"
+          overflow="auto"
+          templateColumns={{ base: "1fr", lg: "1fr 1fr 1fr" }}
+          gap={3}
+        >
+          <iframe
+            width="300"
+            height="480"
+            src="https://www.youtube.com/embed/fnEguNA8gaw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+          <iframe
+            width="300"
+            height="480"
+            src="https://www.youtube.com/embed/ejYl1km1O4U"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+          <iframe
+            width="300"
+            height="480"
+            src="https://www.youtube.com/embed/D_RvhePfAAE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </Grid>
+        <Text textAlign="center" fontSize="2xl" marginTop={10}>
           In Simple words, we are going to pre-sell to your clients.
         </Text>
         <Center mt={8}>
