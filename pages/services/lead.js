@@ -27,43 +27,7 @@ const Page = () => {
         <Heading textAlign={"center"} size="2xl" fontWeight="extrabold">
           Guacamaya Lead generation services
         </Heading>
-        <Text
-          py={8}
-          textAlign={"start"}
-          fontSize="lg"
-          fontWeight="medium"
-          color={useColorModeValue("gray.600", "whiteAlpha.700")}
-        >
-          How many sales can you make from the 100 customers we will provide you
-          with?
-          <br />
-          <br /> A lead generation service provider manages campaigns to
-          discover customers for companies.
-          <br />
-          <br /> Guacamaya Social Media has a remote team specialized in sales
-          that will not only get the data of your potential customers, but will
-          build a link between this customer and your company's vendors to make
-          it much easier to make a sale. Some of these providers will help with
-          follow-up campaigns to ensure the highest conversion rate.
-          <br />
-          <br /> The lead generation service provides:
-          <br />
-          <br /> - 100 to 200 leads per month.
-          <br />
-          <br /> - Information such as names, phone numbers and buying interests
-          of the prospect.
-          <br />
-          <br /> - A professional commercial video with a professional speaker
-          that companies who hire us can use for their own marketing purposes
-          independently of our lead generation service.
-          <br />
-          <br /> - We will provide you with an organized database of prospect
-          numbers and data so that companies can do their own follow up with
-          prospects.
-          <br />
-          <br /> - Get a consultation today and let's close sales now!
-        </Text>
-        <Text textAlign="center" fontSize="2xl" marginBottom={10}>
+        <Text textAlign="center" fontSize="2xl" margin={20}>
           This is how we generate leads for yor company:
         </Text>
         <Grid
@@ -109,6 +73,57 @@ const Page = () => {
             allowFullScreen
           ></iframe>
         </Grid>
+        <Text
+          py={8}
+          textAlign={"center"}
+          fontSize="lg"
+          fontWeight="900"
+          color={useColorModeValue("gray.600", "whiteAlpha.700")}
+        >
+          How many sales can you make from the 100 customers we will provide you
+          with?
+        </Text>
+        <Text
+          py={8}
+          textAlign={"center"}
+          fontSize="lg"
+          fontWeight="medium"
+          color={useColorModeValue("gray.600", "whiteAlpha.700")}
+        >
+          A lead generation service provider manages campaigns to discover
+          customers for companies.
+          <br />
+          <br /> Guacamaya Social Media has a remote team specialized in sales
+          that will not only get the data of your potential customers, but will
+          build a link between this customer and your company's vendors to make
+          it much easier to make a sale. Some of these providers will help with
+          follow-up campaigns to ensure the highest conversion rate.
+          <br />
+          <br /> The lead generation service provides:
+          <br />
+          <br /> - 100 to 200 leads per month.
+          <br />
+          <br /> - Information such as names, phone numbers and buying interests
+          of the prospect.
+          <br />
+          <br /> - A professional commercial video with a professional speaker
+          that companies who hire us can use for their own marketing purposes
+          independently of our lead generation service.
+          <br />
+          <br /> - We will provide you with an organized database of prospect
+          numbers and data so that companies can do their own follow up with
+          prospects.
+        </Text>
+        <Text
+          py={8}
+          textAlign={"center"}
+          fontSize="lg"
+          fontWeight="900"
+          color={useColorModeValue("gray.600", "whiteAlpha.700")}
+        >
+          Get a consultation today and let's close sales now!
+        </Text>
+
         <Text textAlign="center" fontSize="2xl" marginTop={10}>
           In Simple words, we are going to pre-sell to your clients.
         </Text>
