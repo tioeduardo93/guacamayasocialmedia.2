@@ -64,7 +64,7 @@ const Page = () => {
           <br /> - Get a consultation today and let's close sales now!
         </Text>
         <Text textAlign="center" fontSize="2xl" marginBottom={10}>
-          Here are somo of our leads:
+          This is how we generate leads for yor company:
         </Text>
         <Grid
           maxW="7xl"
