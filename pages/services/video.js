@@ -184,7 +184,7 @@ const Page = () => {
           maxW="7xl"
           overflow="auto"
           templateColumns={{ base: "1fr", lg: "1fr 1fr 1fr 1fr" }}
-          gap={4}
+          gap={1.4}
         >
           <iframe
             width="300"
