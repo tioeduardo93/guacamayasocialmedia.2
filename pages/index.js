@@ -8,18 +8,30 @@ import { chakra } from "@chakra-ui/react";
 
 export default function Home() {
   function clickLink() {
-      const link = document.querySelector('#cta-link')
-      if (document.createEvent) {
-          var event = document.createEvent("MouseEvents");
-          event.initMouseEvent("click", true, true, window,
-              0, 0, 0, 0, 0,
-              false, false, false, false,
-              0, null);
-          link.dispatchEvent(event);
-      }
-      else if (link.fireEvent) {
-        link.fireEvent("onclick");
-      }
+    const link = document.querySelector("#cta-link");
+    if (document.createEvent) {
+      var event = document.createEvent("MouseEvents");
+      event.initMouseEvent(
+        "click",
+        true,
+        true,
+        window,
+        0,
+        0,
+        0,
+        0,
+        0,
+        false,
+        false,
+        false,
+        false,
+        0,
+        null
+      );
+      link.dispatchEvent(event);
+    } else if (link.fireEvent) {
+      link.fireEvent("onclick");
+    }
   }
   return (
     <MainLayout>
@@ -27,15 +39,14 @@ export default function Home() {
       <PeopleWhoTrustUs />
       <Services />
       <chakra.div cursor="pointer">
-
         <img onClick={clickLink} src="/diseno/banners/xpromo1.png" alt="" />
       </chakra.div>
       <AboutUs.AboutUs />
       <AboutUs.OurTeam />
-      <chakra.div cursor="pointer" position={'relative'}>
+      <chakra.div cursor="pointer" position={"relative"}>
         <img onClick={clickLink} src="/diseno/banners/xpromo2.png" alt="" />
       </chakra.div>
       <CTA />
     </MainLayout>
-  )
+  );
 }
