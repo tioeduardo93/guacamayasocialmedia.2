@@ -62,7 +62,7 @@ const OurTeamComponent = () => {
           position="Marketing Planner"
         />
         <TeamItem
-          src="/public/equipo/eduardo.jpg"
+          src="/equipo/eduardo.jpg"
           name="Eduardo Cebrián"
           position="Programmer / Web Designer"
         />
