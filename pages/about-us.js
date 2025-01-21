@@ -108,7 +108,7 @@ export default function AboutUsPage() {
             }
           />
           <Card
-            image="/public/equipo/eduardo.jpg"
+            image="/equipo/eduardo.jpg"
             charge={"Programmer / Web Designer"}
             title="Eduardo Cebrián"
             description={
