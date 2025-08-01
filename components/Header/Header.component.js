@@ -1,14 +1,42 @@
-import { useWindowsSize } from '@/hooks/useWindowSize';
 import { links } from '@/lib/constants';
 import { Box, chakra, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, HStack, Square, useDisclosure } from '@chakra-ui/react';
 import Link from 'next/link';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { BiMenu } from 'react-icons/bi';
 import { CTAGroup } from '../CTAGroup/CTAGroup.component';
 
 
 export const Header = () => {
-  const { width } = useWindowsSize();
+  const [isClient, setIsClient] = useState(false);
+  const [width, setWidth] = useState(undefined);
+
+  useEffect(() => {
+    setIsClient(true);
+    setWidth(window.innerWidth);
+    
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Renderizar un estado de carga simple en el servidor
+  if (!isClient) {
+    return (
+      <chakra.div bg="primary" px={8}>
+        <chakra.header justifyContent={'space-between'} display={'flex'} bg="primary" py={2} maxW="1280px" mx="auto">
+          <Link href={'/'} passHref>
+            <chakra.img cursor={'pointer'} height={'50px'} src="/logo.png" alt="" />
+          </Link>
+          <Square fontSize={32} color="white">
+            <BiMenu />
+          </Square>
+        </chakra.header>
+      </chakra.div>
+    );
+  }
 
   return (
     <>

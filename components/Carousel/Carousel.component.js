@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { chakra } from "@chakra-ui/react";
 import Slider from "react-slick";
-import { useWindowsSize } from "@/hooks/useWindowSize";
 
 const images = [
   "/home/influencers.png",
@@ -12,7 +11,26 @@ const images = [
 ];
 
 export const Carousel = () => {
-  const { width } = useWindowsSize();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  // Renderizar un estado simple en el servidor
+  if (!isClient) {
+    return (
+      <chakra.div
+        position={"relative"}
+        width={'700px'}
+        height={'700px'}
+        display={{
+            base: 'none',
+            md: 'block',
+        }}
+      />
+    );
+  }
   const settings = {
     dots: false,
     infinite: true,

@@ -24,9 +24,12 @@ const Page = () => {
         spacing="12"
       >
         <Heading textAlign={"center"} size="2xl" fontWeight="extrabold">
-          Do you need a model / Actor / Influencer that shows how your service
+          Do you need a model / Actor / Promoter that shows how your service
           or product really works on real people?
         </Heading>
+        <Center mt={6}>
+          <CTAGroup reference="Desde la pagina de promoters" />
+        </Center>
         <Text
           py={8}
           textAlign={"center"}
@@ -35,9 +38,9 @@ const Page = () => {
           color={useColorModeValue("gray.600", "whiteAlpha.700")}
         >
           Guacanmaya has built the most reliable network of actors and
-          influencers in the DMV area, with models, actors and influencers who
+          promoters in the DMV area, with models, actors and promoters who
           have had experience in traditional media and who are even known by the
-          audience in the area, from Models to renowned influencers Guacamaya
+          audience in the area, from Models to renowned promoters Guacamaya
           will make the perfect cast for your BUSINESS.
         </Text>
         <Grid
@@ -97,10 +100,10 @@ const Page = () => {
               fontWeight="extrabold"
             >
               <Circle size="24px" mr={2} bg="primary" />
-              Micro Influencers
+              Micro Promoters
             </Heading>
             <Text>
-              The biggest advantage about influencers is that they are known by
+              The biggest advantage about promoters is that they are known by
               the audience and that they can be ambassadors of your business
               creating trust in the buyer (You are more likely to buy if a
               friend recommends you buy)
@@ -116,22 +119,22 @@ const Page = () => {
               fontWeight="extrabold"
             >
               <Circle size="24px" mr={2} bg="primary" />
-              Macro Influencers
+              Macro Promoters
             </Heading>
             <Text>
-              A big influencer will bring you more sales and more customer
+              A big promoter will bring you more sales and more customer
               loyalty
             </Text>
           </Box>
         </Grid>
 
         <Text textAlign="center" fontSize="2xl">
-          Consult today and find out what type of influencer is best for your
+          Consult today and find out what type of promoter is best for your
           company.
         </Text>
 
         <Center mt={8}>
-          <CTAGroup reference="Desde la pagina de influencers" />
+          <CTAGroup reference="Desde la pagina de promoters" />
         </Center>
       </Box>
     </MainLayout>

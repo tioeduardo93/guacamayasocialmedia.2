@@ -8,6 +8,7 @@ import { chakra } from "@chakra-ui/react";
 
 export default function Home() {
   function clickLink() {
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
     const link = document.querySelector("#cta-link");
     if (document.createEvent) {
       var event = document.createEvent("MouseEvents");
@@ -38,7 +39,6 @@ export default function Home() {
       <Hero />
       <PeopleWhoTrustUs />
       <Services />
-
       <chakra.div cursor="pointer">
         <img onClick={clickLink} src="/diseno/banners/xpromo1.png" alt="" />
       </chakra.div>

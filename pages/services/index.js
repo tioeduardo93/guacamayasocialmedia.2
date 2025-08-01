@@ -25,7 +25,7 @@ const Services = () => {
           mb={8}
         >
 
-          <ServicesLink href="/services/influencer"
+          <ServicesLink href="/services/promoter"
             src="/diseno/servicios/upscale/xinfluencer.png" alt="" />
 
           <ServicesLink href="/services/lead"

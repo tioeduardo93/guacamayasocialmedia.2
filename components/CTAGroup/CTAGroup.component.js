@@ -1,6 +1,5 @@
-import { useWindowsSize } from "@/hooks/useWindowSize";
 import { chakra, Box, Button, Flex, Heading, Input, useToast } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const CTAGroup = ({ reference }) => {
   const [formData, setFormData] = useState({
@@ -11,8 +10,12 @@ export const CTAGroup = ({ reference }) => {
     reference: reference || "desde la web",
   });
   const [showModal, setShowModal] = useState(false);
-  const { width } = useWindowsSize();
+  const [isClient, setIsClient] = useState(false);
   const toast = useToast();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -53,31 +56,28 @@ export const CTAGroup = ({ reference }) => {
     setShowModal(true);
   };
 
-  const handleBookNow = () => {
-    setShowModal(true);
-  };
-
   return (
     <>
-      <Box
-        onClick={(e) => {
-          if (e.target.id === "modal-container") {
-            setShowModal(false);
-          }
-        }}
-        id="modal-container"
-        display={showModal ? "flex" : "none"}
-        height="100vh"
-        width="100vw"
-        alignItems="center"
-        justifyContent="center"
-        position="fixed"
-        zIndex="99"
-        top="0"
-        left="0"
-        bg="rgba(250,100,209,0.9)"
-        className="slideIn"
-      >
+      {isClient && (
+        <Box
+          onClick={(e) => {
+            if (e.target.id === "modal-container") {
+              setShowModal(false);
+            }
+          }}
+          id="modal-container"
+          display={showModal ? "flex" : "none"}
+          height="100vh"
+          width="100vw"
+          alignItems="center"
+          justifyContent="center"
+          position="fixed"
+          zIndex="99"
+          top="0"
+          left="0"
+          bg="rgba(250,100,209,0.9)"
+          className="slideIn"
+        >
         <chakra.form
           onSubmit={handleSubmit}
           css={`
@@ -197,6 +197,7 @@ export const CTAGroup = ({ reference }) => {
           </Button>
         </chakra.form>
       </Box>
+      )}
       <Flex
         flexDir={{
           base: "column",
@@ -219,45 +220,27 @@ export const CTAGroup = ({ reference }) => {
           display={"block"}
           colorScheme={"brand"}
         >
-          Chat With Us
+          Get Free Quote
         </Button>
-        {width > 1024 ? (
-          <Button
-            onClick={handleBookNow}
-            rounded="full"
-            bg="white"
-            w={{
-              base: "100%",
-              md: "200px",
-            }}
-            mb={4}
-            display={"block"}
-            colorScheme={"brand"}
-            variant="outline"
-          >
-            Book Now
-          </Button>
-        ) : (
-          <Button
-            as="a"
-            href="tel:+12404490346"
-            rounded="full"
-            bg="white"
-            w={{
-              base: "100%",
-              md: "200px",
-            }}
-            mb={4}
-            display={"flex"}
-            colorScheme={"brand"}
-            variant="outline"
-            alignItems="center"
-            justifyContent="center"
-            textAlign="center"
-          >
-            Book Now
-          </Button>
-        )}
+        <Button
+          as="a"
+          href="tel:+12404490346"
+          rounded="full"
+          bg="white"
+          w={{
+            base: "100%",
+            md: "200px",
+          }}
+          mb={4}
+          display={"flex"}
+          colorScheme={"brand"}
+          variant="outline"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+        >
+          Free Consultation
+        </Button>
       </Flex>
     </>
   );

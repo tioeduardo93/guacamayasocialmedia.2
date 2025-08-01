@@ -5,7 +5,7 @@ import { Button, Container, Text, chakra, Center, Grid } from "@chakra-ui/react"
 export default function Donate() {
   return (
     <MainLayout>
-      <Container maxW={'1280px'} mt={12}>
+      <Container maxW={'1280px'} mb={8}>
         <Title mb={4}>Donate!</Title>
         <Text textAlign={'center'} mb={2}>
           Guacamaya is an idea brought from Venezuela and made reality in the United States, it is no coincidence that the macaw (Guacamaya) is one of the most seen birds in the capital of Venezuela.

@@ -65,6 +65,9 @@ const Page = () => {
           <Heading textAlign={"center"} size="2xl" fontWeight="extrabold">
             Guacamaya video advertisement
           </Heading>
+          <Box textAlign="center" mt={6}>
+            <CTAGroup reference="Desde la pagina de video commercials" />
+          </Box>
           <Text
             py={8}
             textAlign={"center"}

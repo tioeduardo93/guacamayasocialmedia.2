@@ -34,6 +34,9 @@ const Page = () => {
         <Heading textAlign={"center"} size="2xl" fontWeight="extrabold">
           Why your business needs it
         </Heading>
+        <Center mt={6}>
+          <CTAGroup reference="Desde la pagina de web design" />
+        </Center>
         <Text
           py={8}
           textAlign={"center"}

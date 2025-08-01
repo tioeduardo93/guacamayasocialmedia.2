@@ -1,28 +1,20 @@
 import { CTAGroup } from "@/components/CTAGroup/CTAGroup.component";
 import { Title } from "@/components/Title/Title.component";
 import { chakra, Flex, Grid, Text } from "@chakra-ui/react";
-import Image from "next/image";
 import Link from "next/link";
 
 export const ServicesLink = ({ href, src, alt }) => {
   return (
-    <Link passHref href={href}>
-      <chakra.a
-        title={alt}
-        _hover={{
-          transform: "scale(1.1)",
-        }}
-      >
-        <Image
-          style={{
-            borderRadius: "12px",
-          }}
+    <Link href={href} legacyBehavior>
+      <a style={{ display: "block" }}>
+        <img
+          style={{ borderRadius: "12px" }}
           width={340}
           height={144}
           src={src}
           alt={alt}
         />
-      </chakra.a>
+      </a>
     </Link>
   );
 };
@@ -43,39 +35,31 @@ export const Services = () => {
           gap={4}
         >
           <ServicesLink
-            href="/services/influencer"
+            href="/services/promoter"
             src="/diseno/servicios/upscale/xinfluencer.png"
-            alt=""
+            alt="promoters"
           />
-
           <ServicesLink
             href="/services/lead"
             src="/diseno/servicios/upscale/xlead.png"
-            alt=""
+            alt="lead generation"
           />
-
           <ServicesLink
             href="/services/management"
             src="/diseno/servicios/upscale/xmanagement.png"
-            alt=""
+            alt="management"
           />
-
-          {/* <ServicesLink href="/services/photo"
-            src="/diseno/servicios/upscale/xphoto.png" alt="" /> */}
-
           <ServicesLink
             href="/services/video"
             src="/diseno/servicios/upscale/xvideo.png"
-            alt=""
+            alt="video commercials"
           />
-
           <ServicesLink
             href="/services/web"
             src="/diseno/servicios/upscale/xweb.png"
-            alt=""
+            alt="web design"
           />
         </Grid>
-
         <Grid
           maxW="7xl"
           overflow="auto"
@@ -92,7 +76,6 @@ export const Services = () => {
             allowFullScreen
           ></iframe>
         </Grid>
-
         <Flex alignItems={"center"}>
           <chakra.div
             p={4}

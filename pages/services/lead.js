@@ -27,6 +27,9 @@ const Page = () => {
         <Heading textAlign={"center"} size="2xl" fontWeight="extrabold">
           Guacamaya Lead generation services
         </Heading>
+        <Center mt={6}>
+          <CTAGroup reference="Desde la pagina de lead generation" />
+        </Center>
         <Text textAlign="center" fontSize="2xl" margin={20}>
           This is how we generate leads for yor company:
         </Text>

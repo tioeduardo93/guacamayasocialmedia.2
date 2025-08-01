@@ -81,7 +81,7 @@ const OurTeamComponent = () => {
 
 const AboutUsComponent = () => {
   return (
-    <chakra.section px={8} maxW={"1280px"} mx={"auto"} pb={12}>
+    <chakra.section px={8} maxW={"1280px"} mx={"auto"} pb={6}>
       <Grid
         alignItems={"center"}
         py={12}

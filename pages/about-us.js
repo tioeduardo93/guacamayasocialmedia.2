@@ -66,9 +66,9 @@ export default function AboutUsPage() {
   return (
     <MainLayout>
       <AboutUs.AboutUs />
-      <Container maxW={"1280px"}>
+      <Container maxW={"1280px"} mb={0}>
         <Grid
-          mb={12}
+          mb={4}
           gap="1rem"
           templateColumns={{
             base: "1fr",
@@ -117,6 +117,7 @@ export default function AboutUsPage() {
           />
         </Grid>
       </Container>
+
     </MainLayout>
   );
 }
