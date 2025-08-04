@@ -78,13 +78,13 @@ const Page = () => {
               for increasing brand awareness and engagement, the guesswork and
               risk of unanticipated pitfalls is taken out for you. Your time is
               valuable, are you willing to sacrifice another area of business
-              for social media management? We don't think so
+              for social media management? We don&apos;t think so
             </Text>
             <Text mb={4}>
               <Text as="span" fontWeight="bold" fontSize="xl">Building Brand Recognition</Text>
               <br />
               Your brand is your unique fingerprint in a sea of competitors. How
-              do you want to be presented to the world? What is "that thing"
+              do you want to be presented to the world? What is &quot;that thing&quot;
               only you can offer? In knowing which platforms are ideal for your
               brand and then regularly posting, creating guidelines for relevant
               posted topics, ensuring visuals align across profiles
@@ -112,7 +112,7 @@ const Page = () => {
           <Text color={"gray.600"} mb={4}>
             Facebook Ad management is one of our specialties at Guacamaya
             Social Media. We can within Ad Manager and the Power Editor to
-            oversee your ad campaigns from start to finish. We'll help you
+            oversee your ad campaigns from start to finish. We&apos;ll help you
             refine your target audiences, select the right Facebook ad
             formats, allocate spend strategically across your other channels
             and measure the performance of your paid social campaigns.
