@@ -13,7 +13,7 @@ import {
 const Page = () => {
   return (
     <MainLayout>
-      <img src="/diseno/servicios/banners/influencers.jpg" alt="" />
+      <img src="/diseno/servicios/banners/brand-ia2.png" alt="" />
       <Box
         mt={8}
         bg="white"

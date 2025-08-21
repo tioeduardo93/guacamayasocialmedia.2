@@ -186,8 +186,8 @@ const Page = () => {
         <Grid
           maxW="7xl"
           overflow="auto"
-          templateColumns={{ base: "1fr", lg: "1fr 1fr 1fr 1fr" }}
-          gap={1.4}
+          templateColumns={{ base: "1fr", lg: "repeat(4, 1fr)" }}
+          gridGap={4.4}
         >
           <iframe
             width="300"
@@ -201,7 +201,7 @@ const Page = () => {
           <iframe
             width="300"
             height="480"
-            src="https://www.youtube.com/embed/Wc_g_ebpKJs"
+            src="https://www.youtube.com/embed/qqEqmSDW0Xc"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -210,7 +210,7 @@ const Page = () => {
           <iframe
             width="300"
             height="480"
-            src="https://www.youtube.com/embed/InORdW_sgDY"
+            src="https://www.youtube.com/embed/rX4gxWq3qg4?si=E9S6mL-NVrzHL52e"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -220,12 +220,32 @@ const Page = () => {
             width="300"
             height="480"
             src="https://www.youtube.com/embed/Otlo1mGunT4"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
+    
+    <iframe
+            width="300"
+            height="480"
+            src="https://www.youtube.com/embed/uOTBJV_JK3U"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
+    <iframe
+            width="300"
+            height="480"
+            src="https://www.youtube.com/embed/EceKZBnZq_o"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
         </Grid>
+        
         <Box as="section" py="5%">
           <Stack
             spacing="6"

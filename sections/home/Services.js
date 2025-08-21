@@ -36,7 +36,7 @@ export const Services = () => {
         >
           <ServicesLink
             href="/services/promoter"
-            src="/diseno/servicios/upscale/xinfluencer.png"
+            src="/diseno/servicios/brand.png"
             alt="promoters"
           />
           <ServicesLink
@@ -69,7 +69,7 @@ export const Services = () => {
           <iframe
             width="300"
             height="480"
-            src="https://www.youtube.com/embed/K1YtwP2c8IU"
+            src="https://www.youtube.com/embed/o9ENAuzUtdw?si=xJWSzF4_qKKh6M-p"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
